@@ -1,0 +1,39 @@
+### Get All Movies
+GET http://localhost:8000/movies
+Accept: application/json
+
+### Get By Id
+GET http://localhost:8000/movies/939984059
+Accept: application/json
+
+### Create Movie
+POST  http://localhost:8000/movies
+Accept: application/json
+Content-Type: application/json
+
+{
+   "isbn": "202020",
+   "title": "Movie Twenty",
+   "Director": {
+      "firstname": "stranger",
+      "lastname": "one"
+   }
+}
+
+### Delete Movie
+DELETE http://localhost:8000/movies/939984059
+Accept: application/json
+
+### Update Movie
+PUT http://localhost:8000/movies/939984059
+Accept: application/json
+Content-Type: application/json
+
+{
+   "isbn": "101010",
+   "title": "Horror Movie",
+   "director": {
+      "firstname": "ian",
+      "lastname": "S.T"
+   }
+}
